@@ -1,20 +1,32 @@
 import React from "react";
+import Button from '@material-ui/core/Button';
 import './button.component.scss';
 
-function Button(props) {
+function UIButton(props) {
   const {
     className,
-    type
+    name,
+    id,
+    color,
+    children,
+    type,
+    variant = "contained"
   } = props;
+
   return (
-    <button 
+    <Button 
       className={`ui-button ${className}`} 
       name={name}
+      id={id}
       type={type}
-    />
+      color={color}
+      variant={variant}
+    >
+    {children}
+    </Button>
   )
 }
 
 export {
-  Button
+  UIButton
 }

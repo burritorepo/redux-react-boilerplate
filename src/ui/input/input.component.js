@@ -1,27 +1,36 @@
 import React from "react";
+import TextField from '@material-ui/core/TextField';
 import './input.component.scss';
 
-function Input(props) {
+function UIInput(props) {
   const {
     className,
     name,
+    id,
     type,
     placeholder,
-    value,
     onChange,
+    label,
+    value,
+    defaultValue,
+    margin = "normal"
   } = props;
   return (
-    <input
-      className={`ui-input ${className}`}
+    <TextField
+      className={`ui-button ${className}`}
       name={name}
+      id={id}
       type={type}
       placeholder={placeholder}
+      label={label}
       value={value}
       onChange={onChange}
+      margin={margin}
+      defaultValue={defaultValue}
     />
   )
 }
 
 export {
-  Input
+  UIInput
 }

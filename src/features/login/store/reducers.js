@@ -1,5 +1,5 @@
-import { initialState } from './State';
-import { LOGIN_SUCCESS } from './Constants';
+import { initialState } from './state';
+import { LOGIN_SUCCESS } from './constants';
 
 const Login = (state = initialState, action) => {
   switch (action.type) {

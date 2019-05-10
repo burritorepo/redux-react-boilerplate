@@ -1,10 +1,10 @@
 import {
-  LOGIN_SUCCES,
+  LOGIN_SUCCESS,
 } from './constants'
 
 const loginSuccess = (response) => {
   return {
-      type: LOGIN_SUCCES,
+      type: LOGIN_SUCCESS,
       payload: {
         response
     }

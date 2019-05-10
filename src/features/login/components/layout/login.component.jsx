@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import {
   Header,
   Main,
@@ -9,11 +10,10 @@ import { Login } from '../login/login.container'
 function LoginLayout() {
   return (
     <div className="login">
-      <Header>
-        <Main>
-          <Login />
-        </Main>
-      </Header>
+      <Header />
+      <Main>
+        <Login />
+      </Main>
       <Footer />
     </div>
   )

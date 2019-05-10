@@ -1,24 +1,29 @@
 import React from "react";
+import Radio from '@material-ui/core/Radio';
+
 import './radio.component.scss';
 
-function Radio(props) {
+function UIRadio(props) {
   const {
     className,
     name,
-    value,
-    onChange
+    id,
+    value="a",
+    onChange,
+    checked
   } = props;
   return (
-    <input
+    <Radio
       className={`ui-input-radio ${className}`}
       name={name}
+      id={id}
       value={value}
       onChange={onChange}
-      type="radio"
+      checked={checked}
     />
   )
 }
 
 export {
-  Radio
+  UIRadio
 }
